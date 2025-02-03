@@ -5,7 +5,25 @@
 <title>沖縄宿泊UY</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+   <!-- slick のCSS（CDN）-->
+   <link 
+   rel="stylesheet" 
+   href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+ />
+ <!-- slickのテーマCSS（任意） -->
+ <link 
+   rel="stylesheet" 
+   href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+ />
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/table.css">
+<link rel="stylesheet" href="css/highlight.css">
+
 </head>
 
 <body>
@@ -13,7 +31,7 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html">お部屋紹介</a></h1>
+<h1 id="logo"><a href="index.html">施設情報</a></h1>
 </header>
 
 <!--メインメニュー-->
@@ -34,56 +52,119 @@
 
 <div class="list">
 <img src="images/room.jpg" alt="">
-<h4>ここの見出しのサイズは、cssフォルダのstyle.cssの「」で変更できます。</h4>
-<p>左の画像の幅もstyle.cssの「」のwidthの数字で変更できます。</p>
+<h4>ツインルーム　共用バスルーム（２人）</h4>
+
+<p>・無料バスアメニティ</p>
+<p>・スリッパ</p>
+<p>・タオル</p>
 </div>
 
+<!--二種類部屋がある-->>
 <div class="list">
-<img src="images/room2.jpg" alt="">
-<h4>見出しを入れます。</h4>
-<p>説明を入れます。</p>
-</div>
-
-<div class="list">
-<h4>見出しを入れます。（※画像を入れない場合の例）</h4>
-<p>説明を入れます。サンプルテキスト。説明を入れます。サンプルテキスト。説明を入れます。サンプルテキスト。説明を入れます。サンプルテキスト。説明を入れます。サンプルテキスト。説明を入れます。サンプルテキスト。<br>
-説明を入れます。サンプルテキスト。説明を入れます。サンプルテキスト。</p>
-</div>
-
+    <img src="images/room2.jpg" alt="">
+    <h4>ツインルーム　共用バスルーム（２人）</h4>
+    <h4>二段ベット</h4>
+    
+    <p>・無料バスアメニティ</p>
+    <p>・スリッパ</p>
+    <p>・タオル</p>
+    </div>
+  
+    <div class="mt-3">
+        <a 
+          href="https://www.booking.com/hotel/jp/gesutohausuuyokinawa.ja.html?aid=356980&label=gog235jc-1FCAsodUIUZ2VzdXRvaGF1c3V1eW9raW5hd2FIFVgDaHWIAQGYARW4AQfIAQzYAQHoAQH4AQKIAgGoAgO4Aq2-_LwGwAIB0gIkOWU0ZWE1NjUtZjA2NS00MzY2LWE1MzItYTllNDE5YTZkNzY12AIF4AIB&sid=2df4cb54b7178b4920d53f701291ca20&dest_id=900049779&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1738481459&srpvid=26dd34d7ecad0134&type=total&ucfs=1&" 
+          target="_blank" 
+          class="btn btn-primary reserve-link animate__animated animate__fadeInUp"
+        >
+          Booking.com で予約
+        </a>
+        <a 
+          href="https://www.airbnb.jp/rooms/1197562650353137656?guests=1&adults=1&s=67&unique_share_id=084ea476-4a34-4d66-8893-b5b2b2c21853" 
+          target="_blank" 
+          class="btn btn-danger reserve-link animate__animated animate__fadeInUp"
+        >
+          Airbnb で予約
+        </a>
+      </div>
 </section>
 
 <section>
+    <h2>ハウスルール</h2>
+    <table>
+      <tr>
+        <th>チェックイン</th>
+        <td>16:00～21:00</td>
+      </tr>
+      <tr>
+        <th>チェックアウト</th>
+        <td>7:00～10:00</td>
+      <tr>
+        <th>キャンセル / 前払い</th>
+        <td>
+            キャンセルポリシーと前払いポリシーは、プランによって異なります。<br>
+            宿泊日を入力し、ご希望のプランの条件をご確認ください。
+          </td>
+      </tr>
+      <tr>
+        <th>お子様とベッド</th>
+        <td>
+            <strong>チャイルドポリシー</strong><br>
+            ・6歳以上のお子様のみ宿泊可能です。<br>
+            ・この宿泊施設では、13歳以上の子供には大人料金が請求されます。<br>
+            ・正しい料金および定員情報を確認するには、検索条件に子供の人数と年齢を追加してください。<br><br>
+            <strong>ベビーベッド＆エキストラベッドに関するポリシー</strong><br>
+            ・この宿泊施設ではベビーベッドやエキストラベッドを利用できません。
+        </td>
+      </tr>
+      <tr>
+        <th style="white-space:nowrap;">年齢制限なし</th>
+        <td>ゲストの年齢制限はありません</td>
+      </tr>
+      <tr>
+        <th style="white-space:nowrap;">ペット</th>
+        <td>ペット宿泊不可。</td>
+      </tr>
+      <tr>
+        <th style="white-space:nowrap;">禁煙 / 喫煙</th>
+        <td>禁煙</td>
+      </tr>
+    </table>
+</section>
     
-<h2>ハウスルール</h2>    
+<div class="mb-5"></div>
     
-
-<h2>サービス紹介</h2>
+<h2>施設情報</h2>
+<h4 class="highlighted">ファミリールーム</h4>
+<p class="c"><p>入るとすぐにファミリールームがあり、広々とした空間と快適な設備で、家族旅行にぴったりの宿泊スペースです。大勢のお客様でご利用いただけるこのお部屋には、小さなお子様連れでも安心してお過ごしいただけます。</p>
+<img src="images/greatholl.jpg" alt="" class="oneshot-size-photo"></p>
     
+<h4 class="highlighted">キッチン</h4>
+<p class="c">
+<p>家族団らんの時間を過ごせるリビングエリアや、ゆったりとおくつろぎいただける広めのバスルームも完備。地元の自然や観光を満喫した後は、ご家族でリラックスできる快適な空間が待っています。
+    ぜひ、楽しい思い出づくりの拠点としてご利用ください。
+</p>
+<br>
+<img src="images/kitchen.jpg" alt="" class="free-size-photo"></p>
     
-<h3>施設情報</h3>
-<h4>ファミリールーム</h4>
-<p class="c">入るとすぐにファミリールームがあり、広々とした空間と快適な設備で、家族旅行にぴったりの宿泊スペースです。最大〇名様までご利用いただけるこのお部屋には、小さなお子様連れでも安心してお過ごしいただけます。
-
-<img src="images/greatholl.jpg" alt=""　style="width:50%;height: 50%;"></p>
-    
-<h4>キッチン</h4>
-<p class="c">家族団らんの時間を過ごせるリビングエリアや、ゆったりとおくつろぎいただける広めのバスルームも完備。地元の自然や観光を満喫した後は、ご家族でリラックスできる快適な空間が待っています。
-<br>ぜひ、楽しい思い出づくりの拠点としてご利用ください。
-<img src="images/kitchen.jpg" alt=""　style="width:50%;height: 50%;"></p>
-    
-<h4>防犯カメラ付き</h4>
+<h4 class="highlighted">防犯カメラ付き</h4>
 <p class="c"><br>
-安心してご滞在いただけるよう、防犯対策も万全です。共用エリアには防犯カメラを設置しており、24時間体制で安全を見守っています。プライバシーを尊重しつつ、ご家族全員が安心して快適に過ごせる環境をご提供いたします。<br>
-<img src="images/camera.jpg" alt="" style="width:50%;height: 50%;"></p>
+<p>安心してご滞在いただけるよう、防犯対策も万全です。共用エリアには防犯カメラを設置しており、24時間体制で安全を見守っています。プライバシーを尊重しつつ、ご家族全員が安心して快適に過ごせる環境をご提供いたします。</p><br>
+<img src="images/camera.jpg" alt="" class="free-size-photo"></p>
     
     
-<h3>アメニティ</h3>
+<h4 class="highlighted">無料アメニティ</h4>
     <li>Wi-fi完備 (free wi-fi)</li>
     <li>無料駐車場   (free Parking)</li>
     <li>テレビ (Tv set)</li>
     <li>エアコン    (Air conditioner)</li>
     <li>荷物お預かりOK (Keep luggage)</li>
     <li>ファミリールーム    (Family room)</li>
+    <li>洗濯機   (washing machine)</li>
+    
+<div class="mb-5"></div>
+
+<h4 class="highlighted">有料アメニティ</h4>
+    <li>乾燥機 (dryer)</li>
 </section>
 
 </main>

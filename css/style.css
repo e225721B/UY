@@ -102,11 +102,16 @@ header #logo img {
 	padding: 0 8px;	/*上下、左右へのテキスト内にとる余白。*/
 }
 
+#menubar a:hover {
+    color: #ff9900;               /* ホバー時の文字色 */
+}
+
 /*メニュー１個あたりの設定*/
 #menubar li {
 	display: inline-block;	/*メニューを横並びにする指定*/
 	text-align: center;		/*テキストをセンタリング*/
     position: relative;
+	border-right: 1px solid #222222;  /* 線の色はお好みで変更 */
 }
 #menubar li::before {
     content: "";
@@ -242,8 +247,9 @@ ul.icon img:hover {
 /*スライドショー（slickを使用）
 ---------------------------------------------------------------------------*/
 .mainimg img {
-    width: 100%; /* 横幅を100%に */
-    height: 500px; /* 高さを固定 */
+    width: 80%; /* 横幅を100%に */
+	margin: 0 auto; /* 中央寄せ */
+    height: 450px; /* 高さを固定 */
     object-fit: cover; /* アスペクト比を保ちながらサイズ調整 */
 }
 
@@ -457,3 +463,104 @@ main {
 /*　※注意！　下の閉じカッコ　}　は800px以上の設定に必要なので、うっかり削除しないように。　*/
 
 }
+
+.bold,
+h1.bold,
+h2.bold,
+h3.bold,
+h4.bold,
+h5.bold,
+h6.bold,
+p.bold,
+span.bold,
+li.bold,
+a.bold,
+button.bold {
+    font-weight: bold;
+	font-size: 120%;
+    color: #ea2222;  /* お好みのフォントカラーに変更可 */
+}
+
+.menu-section {
+	/* 他のスタイルも必要に応じて追加可能 */
+	padding: 20px; 
+  }
+
+  .menu-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+  }
+  
+  .menu-table th,
+  .menu-table td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: left;
+  }
+
+  /* th 表示部分を1行にする */
+  .menu-table th {
+     white-space: nowrap;
+  }
+  
+  .menu-table .title {
+	background-color: #f0f0f0;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+  }
+  
+  .free-size-photo {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+  }
+
+  .oneshot-size-photo {
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+  }
+
+  .balanced-gallery {
+	display: flex;
+	gap: 20px; /* 大きな写真と小さな写真群の間隔 */
+	align-items: stretch; /* 子要素を高さ合わせ */
+  }
+  
+  .large-photo {
+	flex: 2; /* 例として大きな写真の幅を広めに */
+  }
+  
+  .large-photo img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+  
+  .small-photos {
+	flex: 1;                           /* 小さい写真群の幅 */
+	display: flex;
+	flex-direction: column;
+	gap: 5px;                         /* 小さい写真同士の間隔 */
+  }
+  
+  .small-photos img {
+	width: 100%;
+	height: auto;
+	display: block;
+	flex: 1;                           /* 均等な高さを目指す */
+	object-fit: cover;                 /* 画像の切り抜きを自然に */
+  }
+
+  .underline {
+	text-decoration-line: underline;    /* 下線を引く */
+	text-decoration-color: rgb(112, 108, 106);         /* 下線の色を指定 */
+	text-decoration-style: solid;       /* 実線や波線などラインのスタイルを指定可能 */
+  }
+  
